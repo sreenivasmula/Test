@@ -1,0 +1,45 @@
+package com.sreeni.json.transform;
+
+public class PrivacyPreference {
+    
+    private int preference_id;
+    private int status_id;
+    private String modified_by;
+    private String modified_date;
+    
+    public int getPreference_id() {
+        return preference_id;
+    }
+    public void setPreference_id(int preference_id) {
+        this.preference_id = preference_id;
+    }
+    public int getStatus_id() {
+        return status_id;
+    }
+    public void setStatus_id(int status_id) {
+        this.status_id = status_id;
+    }
+    public String getModified_by() {
+        return modified_by;
+    }
+    public void setModified_by(String modified_by) {
+        this.modified_by = modified_by;
+    }
+    public String getModified_date() {
+        return modified_date;
+    }
+    public void setModified_date(String modified_date) {
+        this.modified_date = modified_date;
+    }
+
+}
+
+
+/*
+ * Copyright 2017 Capital One Financial Corporation All Rights Reserved.
+ * 
+ * This software contains valuable trade secrets and proprietary information of
+ * Capital One and is protected by law. It may not be copied or distributed in
+ * any form or medium, disclosed to third parties, reverse engineered or used in
+ * any manner without prior written authorization from Capital One.
+ */
