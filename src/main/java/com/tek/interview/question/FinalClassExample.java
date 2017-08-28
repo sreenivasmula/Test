@@ -24,8 +24,8 @@ public final class FinalClassExample {
      * Accessor function for mutable objects
      */
     public HashMap<String, String> getTestMap() {
-        //return testMap;
-        return (HashMap<String, String>) testMap.clone();
+        return testMap;
+        //return (HashMap<String, String>) testMap.clone();
     }
 
     /**

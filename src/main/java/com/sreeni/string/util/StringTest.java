@@ -9,7 +9,14 @@ public class StringTest {
         
         String s1 = "abc";
         String s2 = "abc";
+        String s4 = s2;
+        s1=s2;
+        final String s5;
+        s5=s1;
         
+        System.out.println("s5==s1 : " + s5==s1 );
+        System.out.println("s4==s2 : " + s4==s2 );
+        System.out.println("s4.equals(s2) : " + s4.equals(s2) );
         System.out.println("s1==s2 : " + s1==s2 );
         System.out.println("s1.equals(s2) : " + s1.equals(s2) );
         
@@ -21,6 +28,9 @@ public class StringTest {
         
         StringBuilder sb1 = new StringBuilder();
         sb1.append("abc");
+        
+        System.out.println("sb1 : " + sb1);
+        
         final StringBuilder sb2 = new StringBuilder();
         sb2.append("abc");
         
@@ -50,13 +60,3 @@ public class StringTest {
     
 
 }
-
-
-/*
- * Copyright 2017 Capital One Financial Corporation All Rights Reserved.
- * 
- * This software contains valuable trade secrets and proprietary information of
- * Capital One and is protected by law. It may not be copied or distributed in
- * any form or medium, disclosed to third parties, reverse engineered or used in
- * any manner without prior written authorization from Capital One.
- */
