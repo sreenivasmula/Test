@@ -12,7 +12,7 @@ public class SearchVersionByCriteria {
         List<Version> versionList = new ArrayList<Version>();
         versionList.add(new Version(1, "cat1", null));
         versionList.add(new Version(2, "cat1", "cat2"));
-        versionList.add(new Version(3, "cat1", "cat2"));
+        versionList.add(new Version(3, null, "cat2"));
         versionList.add(new Version(4, null, null));
         versionList.add(new Version(5, "cat1", null));
         versionList.add(new Version(6, "cat1", "cat2"));
