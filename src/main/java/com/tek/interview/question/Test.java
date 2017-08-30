@@ -4,7 +4,9 @@ public class Test {
 
     public static void main(String[] args) {
         
-        String str = "vikatakiv";
+        String str = "vikat akiv";
+        
+        str = str.replace(" ", "");
         
         System.out.println(str + " is Palindrome? " + isPalindromeString(str));
     }
@@ -15,7 +17,6 @@ public class Test {
         int length = str.length();
         System.out.println(length / 2);
         for (int i = 0; i < length / 2; i++) {
-
             if (str.charAt(i) != str.charAt(length - i - 1))
                 return false;
         }

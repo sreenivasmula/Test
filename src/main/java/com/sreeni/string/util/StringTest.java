@@ -8,24 +8,27 @@ public class StringTest {
     public static void main(String[] args) {
         
         String s1 = "abc";
-        String s2 = "abc";
+        String s2 = "ABC";
+        String s3 = new String("abc");
         String s4 = s2;
-        s1=s2;
+       
         final String s5;
         s5=s1;
         
-        System.out.println("s5==s1 : " + s5==s1 );
-        System.out.println("s4==s2 : " + s4==s2 );
-        System.out.println("s4.equals(s2) : " + s4.equals(s2) );
-        System.out.println("s1==s2 : " + s1==s2 );
+        System.out.print("s1==s2 : ");        
+        System.out.println(s1==s2);
         System.out.println("s1.equals(s2) : " + s1.equals(s2) );
-        
-        String s3 = new String("abc");
-        
-        System.out.println("s1==s3 : " + s1==s3 );
-        
+        System.out.print("s1==s3 : ");        
+        System.out.println(s1==s3 );        
         System.out.println("s1.equals(s3) : " + s1.equals(s3) );
+        System.out.print("s4==s2 : ");
+        System.out.println(s4==s2);
+        System.out.println("s4.equals(s2) : " + s4.equals(s2) );
+        System.out.print("s5==s1 : ");  
+        System.out.println(s5==s1);      
         
+        
+                     
         StringBuilder sb1 = new StringBuilder();
         sb1.append("abc");
         
@@ -37,9 +40,9 @@ public class StringTest {
         System.out.println("sb2 : " + sb2);
         
         StringBuffer sbOriginal = new StringBuffer("SB1");
+        sbOriginal.reverse();
         foo(sbOriginal);
-        System.out.println("sbOriginal : " + sbOriginal);      
-        
+        System.out.println("sbOriginal : " + sbOriginal);              
         
         Map<MyKey, String> hm = new HashMap<MyKey, String>();
         hm.put(new MyKey(),  "1");
